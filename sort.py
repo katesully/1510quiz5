@@ -15,10 +15,10 @@ def is_sorted(integers):
     sorted_list = sorted(integers)
     sort_status = False
 
-    if sorted_list == integers:
-        sort_status = True
-    elif len(integers) == 0:
+    if len(integers) == 0:
         sort_status = False
+    elif sorted_list == integers:
+        sort_status = True
     elif sorted_list != integers:
         sort_status = False
     return sort_status
@@ -27,5 +27,6 @@ def is_sorted(integers):
 def main():
     print(is_sorted([1, 2, 3]))
 
+
 if __name__ == "__main__":
-        main()
+    main()
